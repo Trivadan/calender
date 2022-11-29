@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="title" content="" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<meta name="publisher" content="" />
+<meta name="copyright" content="" />
+<meta name="creation_Date" content="18/09/2022" />
+<meta name="expires" content="" />
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<title>Safaricom Calender</title>
+
+<!--StyleSheet-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="css/style.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+
+<!--Javascript-->
+<script src="js/google.api.js" type="text/Javascript"></script>
+</head>
+
+<body>
+
+<!-- Header Area Start -->
+<header class="header-area scrollheader">
+  <div class="classy-nav-container breakpoint-off">
+    <div class="container"> 
+      <!-- Classy Menu -->
+      <nav class="classy-navbar justify-content-between" id="roamingnav"> 
+        
+        <!-- Logo --> 
+        <a class="nav-brand mainlogo" href="index.html"><img src="images/safaricom.svg" class="web-logo" alt=""> </a> 
+        
+        <!-- Navbar Toggler -->
+        <div class="classy-navbar-toggler"> <span class="navbarToggler"><span></span><span></span><span></span></span> </div>
+        
+        <!-- Menu -->
+        <div class="classy-menu"> 
+          <!-- <a class="nav-brand nav-brand-mobile" href="index.html"><img src="images/mpesa-logo.svg" class="mobile-logo" alt=""></a> --> 
+          <!-- Menu Close Button -->
+          <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+          </div>
+          <!-- Nav Start -->
+          <div class="classynav">
+            <ul id="nav">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover about the Calendar</a></li>
+            </ul>
+          </div>
+          <!-- Nav End --> 
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- Header Area End -->
+
+<section>
+  <div id="bannermain" class="owl-carousel owl-theme topbanner">
+     <div class="mainbanner-box">
+      <div class="bannerpic"><img src="images/banner-01.jpg" alt="Safaricom Roaming"></div>
+      <div class="bannerinfo">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <div class="mainbanner-overlay">
+                 <p>November, 2023</p>
+                <h1>Sacred Groves of Mfangano Island – Lake Victoria</h1>
+                <a href="#" class="btn-readmore">Explore more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainbanner-box">
+      <div class="bannerpic"><img src="images/banner-01.jpg" alt="Safaricom Roaming"></div>
+      <div class="bannerinfo">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <div class="mainbanner-overlay">
+                <p>November, 2023</p>
+                <h1>Sacred Groves of Mfangano Island – Lake Victoria</h1>
+                <a href="#" class="btn-readmore">Explore more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mainbanner-box">
+      <div class="bannerpic"><img src="images/banner-01.jpg" alt="Safaricom Roaming"></div>
+      <div class="bannerinfo">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12">
+              <div class="mainbanner-overlay">
+                <p>November, 2023</p>
+                <h1>Sacred Groves of Mfangano Island – Lake Victoria</h1>
+                <a href="#" class="btn-readmore">Explore more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="section bg-green bg-overlay">
+<div class="container">
+<div class="row">
+  <div class="col-xl-8 col-lg-10 mx-auto text-center">
+    <div class="contentinfo white-text aboutarea">
+      <h2>What’s this about?</h2>
+      <p>We are on a mission to showcase our beautiful heritage in new ways through the works of talented photographers.Our aim is to boost the collective image of our nation, and to share the same with as many people as we can in the spirit of tuinuane.</p>
+      <a href="#" class="button button-bordered btn-light"><span>Discover more</span></a>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+      <!-- Slider Area-->
+      <div class="col-lg-12 pt-5">
+        <div id="owl-example" class="calenderslider owl-carousel">
+          <div class="calender-content">
+            <div class="calender-header">
+              <div class="calender-header-title">
+                <h2>January <span>2023</span></h2>
+              </div>
+              <img src="images/calender/calender-01.jpg" alt="Calender">
+              <div class="calender-header-cta">
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#januarymodal">View more <i class="icofont-plus-square"></i></a>
+              </div>
+            </div>
+            <div class="calender-body">
+              <table class="calender-table" id='Calendar' data-month=202301 border=0 cellpadding=0 cellspacing=0>
+                 <colgroup>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                </colgroup>
+                 <tr>
+                  <td colspan=2 class=Sapro11125007>Sun</td>
+                  <td colspan=2 class=Sapro11225007>Mon</td>
+                  <td colspan=2 class=Sapro11225007>Tue</td>
+                  <td colspan=2 class=Sapro11225007>Wed</td>
+                  <td colspan=2 class=Sapro11225007>Thu</td>
+                  <td colspan=2 class=Sapro11225007>Fri</td>
+                  <td colspan=2 class=Sapro11225007>Sat</td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=holidaynumber>1</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>2</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>3</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>4</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>5</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>6</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>7</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>8</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>9</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>10</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>11</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>12</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>13</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>14</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>15</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>16</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>17</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>18</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>19</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>20</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>21</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>22</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>23</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>24</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>25</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>26</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>27</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>28</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>29</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>30</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>31</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro10125007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10325007> </td>
+                 </tr>
+                </table>
+            </div>
+          </div>
+          <div class="calender-content">
+            <div class="calender-header">
+              <div class="calender-header-title">
+                <h2>January <span>2023</span></h2>
+              </div>
+              <img src="images/calender/calender-01.jpg" alt="Calender">
+              <div class="calender-header-cta">
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#januarymodal">View more <i class="icofont-plus-square"></i></a>
+              </div>
+            </div>
+            <div class="calender-body">
+              <table class="calender-table" id='Calendar' data-month=202301 border=0 cellpadding=0 cellspacing=0>
+                 <colgroup>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                </colgroup>
+                 <tr>
+                  <td colspan=2 class=Sapro11125007>Sun</td>
+                  <td colspan=2 class=Sapro11225007>Mon</td>
+                  <td colspan=2 class=Sapro11225007>Tue</td>
+                  <td colspan=2 class=Sapro11225007>Wed</td>
+                  <td colspan=2 class=Sapro11225007>Thu</td>
+                  <td colspan=2 class=Sapro11225007>Fri</td>
+                  <td colspan=2 class=Sapro11225007>Sat</td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>1</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>2</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>3</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>4</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>5</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>6</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>7</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>8</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>9</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>10</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>11</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>12</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>13</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>14</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>15</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>16</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>17</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>18</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>19</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>20</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>21</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>22</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>23</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>24</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>25</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>26</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>27</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>28</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>29</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>30</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>31</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro10125007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10325007> </td>
+                 </tr>
+                </table>
+            </div>
+          </div>
+          <div class="calender-content">
+            <div class="calender-header">
+              <div class="calender-header-title">
+                <h2>January <span>2023</span></h2>
+              </div>
+              <img src="images/calender/calender-01.jpg" alt="Calender">
+              <div class="calender-header-cta">
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#januarymodal">View more <i class="icofont-plus-square"></i></a>
+              </div>
+            </div>
+            <div class="calender-body">
+              <table class="calender-table" id='Calendar' data-month=202301 border=0 cellpadding=0 cellspacing=0>
+                 <colgroup>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                </colgroup>
+                 <tr>
+                  <td colspan=2 class=Sapro11125007>Sun</td>
+                  <td colspan=2 class=Sapro11225007>Mon</td>
+                  <td colspan=2 class=Sapro11225007>Tue</td>
+                  <td colspan=2 class=Sapro11225007>Wed</td>
+                  <td colspan=2 class=Sapro11225007>Thu</td>
+                  <td colspan=2 class=Sapro11225007>Fri</td>
+                  <td colspan=2 class=Sapro11225007>Sat</td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>1</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>2</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>3</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>4</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>5</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>6</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>7</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>8</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>9</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>10</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>11</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>12</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>13</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>14</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>15</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>16</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>17</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>18</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>19</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>20</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>21</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>22</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>23</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>24</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>25</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>26</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>27</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>28</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>29</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>30</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>31</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro10125007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10325007> </td>
+                 </tr>
+                </table>
+            </div>
+          </div>
+          <div class="calender-content">
+            <div class="calender-header">
+              <div class="calender-header-title">
+                <h2>January <span>2023</span></h2>
+              </div>
+              <img src="images/calender/calender-01.jpg" alt="Calender">
+              <div class="calender-header-cta">
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#januarymodal">View more <i class="icofont-plus-square"></i></a>
+              </div>
+            </div>
+            <div class="calender-body">
+              <table class="calender-table" id='Calendar' data-month=202301 border=0 cellpadding=0 cellspacing=0>
+                 <colgroup>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                  <col class='monthNoCol'><col class='monthTxtCol'>
+                </colgroup>
+                 <tr>
+                  <td colspan=2 class=Sapro11125007>Sun</td>
+                  <td colspan=2 class=Sapro11225007>Mon</td>
+                  <td colspan=2 class=Sapro11225007>Tue</td>
+                  <td colspan=2 class=Sapro11225007>Wed</td>
+                  <td colspan=2 class=Sapro11225007>Thu</td>
+                  <td colspan=2 class=Sapro11225007>Fri</td>
+                  <td colspan=2 class=Sapro11225007>Sat</td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>1</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>2</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>3</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>4</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>5</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>6</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>7</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>8</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>9</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>10</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>11</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>12</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>13</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>14</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>15</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>16</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>17</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>18</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>19</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>20</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>21</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>22</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>23</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>24</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>25</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>26</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>27</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9325007>28</td>
+                  <td class=Sapro9425007> </td>
+                 </tr>
+                 <tr>
+                  <td colspan=2 class=Sapro9525007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9725007></td>
+                  <td colspan=2 class=Sapro9925007></td>
+                 </tr>
+                 <tr>
+                  <td class=Sapro8925007>29</td>
+                  <td class=Sapro9025007> </td>
+                  <td class=Sapro9125007>30</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro9125007>31</td>
+                  <td class=Sapro9225007> </td>
+                  <td class=Sapro10125007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10225007> </td>
+                  <td class=Sapro10325007> </td>
+                 </tr>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Wallpaper-->
+      <div class="col-lg-8 mx-auto py-4 text-center mt-4 mb-5">
+        <button class="button button-bordered btn-dark"><span>Download Wallpaper</span></button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section bg-green aboutarea">
+
+</section>
+
+<section class="section bg-green py-5">
+  
+</section> -->
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto py-4">
+        <div class="page-title text-center">
+          <h2>Join the Movement</h2>
+          <p>Have you been to these places already? Share with us your experience by posting your photo on social media and tag us.Let's connect and continue the conversation of hope, upliftment and celebration of our land and our people.Use the hashtag <strong>#PlacesOfHope</strong> on your social media tags</p>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <div class="grid">
+          <div class="grid-item"><img src="images/gallery/gallery-01.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/gallery/gallery-02.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/gallery/gallery-03.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/gallery/gallery-04.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/gallery/gallery-05.jpg" alt=""></div>
+          <div class="grid-item"><img src="images/gallery/gallery-06.jpg" alt=""></div>
+        </div>
+      </div>
+      <div class="col-lg-8 mx-auto py-4 text-center">
+        <button class="button button-bordered"><span>Load more posts</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer-bottom">
+  <div class="container">
+    <div class="bottom-inner">
+      <div class="row align-items-center">
+        <!--Social Column-->
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>Copyright Reserved.</p>
+        </div>
+        <div class="social-column col-lg-6 col-md-12 col-sm-12 text-end">
+          <div class="copyright">
+            <ul class="social-icon-one">
+            <li class="linkedin"><a href="#"><span class="fab fa-linkedin"></span></a></li>
+            <li class="facebook"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+            <li class="twitter"><a href="#"><span class="fab fa-twitter"></span></a></li>
+            <li class="instagram"><a href="#"><span class="fab fa-instagram"></span></a></li>
+            <li class="youtube"><a href="#"><span class="fab fa-youtube"></span></a></li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="januarymodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-close">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modalinfo">
+        <div class="topinfo-modal">
+        <h3>Fort Jesus - Mombasa</h3>
+        <p>The Fort, built by the Portuguese in 1593-1596 to the designs of Giovanni Battista Cairati to protect the port of Mombasa, is one of the most outstanding and well preserved examples of 16th Portuguese military fortification and a landmark in the history of this type of construction. The Fort’s layout and form reflected the Renaissance ideal that perfect proportions and geometric harmony are to be found in the human body. The property covers an area of 2.36 hectares and includes the fort’s moat and immediate surroundings.</p>
+        <a href="#" class="btn btn-red">Explore more <i class="icofont-external-link"></i></a>
+      </div>
+      <div class="topinfo-modal">
+        <h3>Take a virtual stroll around Fort Jesus </h3>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- jQuery --> 
+<script src="js/jquery.min.js" type="text/Javascript"></script> 
+<script src="js/main.js" type="text/Javascript"></script>
+</body>
+
+</html>

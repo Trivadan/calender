@@ -375,12 +375,12 @@ embed, iframe, object {
     color:#2CB34A !important;
 }
 .classynav ul li.active a::before {
-    width: 80%;
-    height:3px;
+    width: 90%;
+    height: 3px;
     background-color: #2cb34a;
     position: absolute;
     bottom: -15px;
-    left: 10%;
+    left: 5%;
     z-index: 1;
     content: '';
 }
@@ -835,6 +835,22 @@ embed, iframe, object {
       border-width: 1px;
   }
 }
+.fancybox-slide--iframe .fancybox-content {
+  padding: 0;
+  width: 80%;
+  height: 80%;
+  max-width: calc(100% - 100px);
+  max-height: calc(100% - 88px);
+  overflow: visible;
+  background: #fff;
+}
+.fancybox-button svg path {
+  fill: currentColor;
+  stroke: currentColor;
+  stroke-linejoin: round;
+  stroke-width: 3;
+}
+
 
 .calenderslider .owl-nav{
   width: 100%;
@@ -981,7 +997,19 @@ embed, iframe, object {
 .holidaynumber{
   color:#EF373E;
 }
-
+.calender-table td {
+    padding: 6px;
+}
+.monthselect select {
+    padding: 12px 60px 12px 30px;
+    background: #EFEFEF;
+    border: none;
+    border-radius: 20px;
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #EFEFEF;
+    -webkit-appearance: none;
+    background-position-x: 145px;
+    background-size: 12px;
+}
 
 /* ---------------------------------------------------
  GRID AREA
@@ -1027,6 +1055,9 @@ embed, iframe, object {
 }
 .footer-bottom .bottom-inner .copy-right-menu{
   display: inline-block;
+}
+.bottom-inner p {
+    margin: 0;
 }
 .copy-right-menu li {
     display: inline-block;
@@ -1106,6 +1137,12 @@ embed, iframe, object {
   font-size: 18px;
   color: #52B44B;
 }
+.cardinfo h3 a{
+  color: #52B44B;
+}
+.cardinfo h3 a:hover{
+  color: #000;
+}
 .cardinfo p{
   font-size:15px;
   margin-bottom:30px;
@@ -1134,6 +1171,86 @@ embed, iframe, object {
 .cardfooter ul li button:hover{
   background:#52B44B;
   color:#FFF;
+}
+
+.bottomsection{
+  width:100%;
+  background: url(../images/banner-musuem.jpg);
+  padding:120px 30px 60px;
+  position: relative;
+  margin: 60px 0;
+  border-radius:20px;
+}
+.bottomsection:before{
+  content:"";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left:0;
+  top: 0;
+  background:rgba(0, 0, 0, 0.5);
+  border-radius:20px;
+}
+.bottomsectioninfo{
+  z-index:1;
+  position: relative;
+}
+.bottomsectioninfo p{
+  color:#FFF;
+  margin:30px 0 0;
+}
+
+.readmore-btn{
+  display:block;
+  text-align: right;
+}
+
+.single-contentinfo{
+  border:2px solid #EEE;
+  padding:30px;
+}
+.single-title h2 {
+    font-size:26px;
+    margin-bottom:30px;
+    color:#52B44B;
+}
+.single-title p {
+    font-size: 16px;
+}
+.video-box{
+  margin:30px 0;
+}
+.single-info{
+  margin:30px 0 15px;
+}
+.single-info p{
+  font-size: 16px;
+  color:#333;
+}
+.insidebanner .owl-nav button {
+    background-color: transparent !important;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #FFF;
+    position: absolute;
+    font-size: 21px !important;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.insidebanner .owl-nav .owl-prev {
+    left:20px;
+}
+.insidebanner .owl-nav .owl-next {
+    right:20px;
+}
+.insidebanner .owl-nav button:hover{
+  background:#FFF;
+  color:#52B44B;
 }
 
 /* ---------------------------------------------------

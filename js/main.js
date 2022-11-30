@@ -58,11 +58,29 @@
         nav:true,
         dots:true,
         navText: ['<i class="icofont-arrow-left"></i>', 
-            '<i class="icofont-arrow-right"></i>'],
+                  '<i class="icofont-arrow-right"></i>'],
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding:0,
+            },
+            576: {
+                items: 1,
+                stagePadding:0,
+            },
+            768: {
+                items: 1,
+            },
+            992: {
+                items: 2,
+            },
+            1200: {
+                items: 2,
+            }
+        }
       })
     });
 
-    $(document).ready(function() {
       $('#bannermain').owlCarousel({
         items: 1,
         slideSpeed: 2000,
@@ -71,13 +89,22 @@
         dots:true,
         loop: true,
         responsiveRefreshRate: 200,
+      })
+
+      $('#insidebanner').owlCarousel({
+        items: 1,
+        slideSpeed: 2000,
+        nav: true,
+        autoplay: false, 
+        dots:false,
+        loop: true,
+        responsiveRefreshRate: 200,
         navText: ['<i class="icofont-arrow-left"></i>', 
             '<i class="icofont-arrow-right"></i>'],
       })
-    });
 
     //LightBox / Fancybox
-    $('.video-popup').fancybox({
+    $('.lightbox-image').fancybox({
         openEffect: 'fade',
         closeEffect: 'fade',
         helpers: {

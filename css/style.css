@@ -379,7 +379,7 @@ embed, iframe, object {
     height: 3px;
     background-color: #2cb34a;
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     left: 5%;
     z-index: 1;
     content: '';
@@ -506,7 +506,7 @@ embed, iframe, object {
 .bannerinfo{
   position: absolute;
   left: 0;
-  top:40%;
+  top:60%;
   width: 100%;
   z-index: 1;
   transform: translateY(-50%);
@@ -580,7 +580,7 @@ embed, iframe, object {
     text-align:left;
 }
 .topbanner.owl-theme .owl-dots .owl-dot span {
-    width: 55px;
+    width:42px;
     height:5px;
     background: #FFF !important;
     border-radius: 0;
@@ -1307,6 +1307,23 @@ embed, iframe, object {
   font-size: 16px;
 }
 
+.buttonarea .btn-readmore {
+    height: auto;
+    margin-right:20px;
+}
+.video-link .ht-popup-video .video-button__two .video-play {
+    width:42px;
+    height:42px;
+}
+.video-link .ht-popup-video .video-button__two .video-play-icon::before {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #ef373e;
+    border-top-width: 9px;
+    border-bottom-width: 9px;
+    border-left-width: 14px;
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -1400,9 +1417,9 @@ embed, iframe, object {
 .single-title h2 {
     font-size: 16px;
 }
-.mainbanner-box {
+/*.mainbanner-box {
     height: 55vh;
-}
+}*/
 .cardfooter ul li button {
     font-size: 13px;
     padding: 5px 12px;
@@ -1415,11 +1432,29 @@ embed, iframe, object {
     font-size: 14px;
     margin-bottom: 15px;
 }
+.mainbanner-box {
+    height: 70vh;
+}
+.bannerpic img{
+  display: none !important;
+}
+.bannerpic {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.mainbanner-box .video-text {
+    margin-left: 10px;
+    font-size: 14px;
+}
+.bannerinfo {
+    top: 60%;
+}
+.video-box {
+    margin: 10px 0;
+}
 }
 @media screen and (max-width:630px){
-.mainbanner-box {
-    height: 50vh;
-}
 .bottomsection {
     padding: 60px 30px 60px;
     margin:30px 0;
@@ -1447,14 +1482,11 @@ embed, iframe, object {
 }
 }
 @media screen and (max-width:600px){
-.mainbanner-box {
-    height: 45vh;
-}
+/*.mainbanner-box {
+    height: vh;
+}*/
 }
 @media screen and (max-width:575px){
-.mainbanner-box {
-    height:40vh;
-}
 .aboutarea {
     padding: 60px 0 0;
 }
@@ -1487,8 +1519,8 @@ embed, iframe, object {
     margin: 15px 0;
 }
 .video-link .ht-popup-video .video-button__two .video-play {
-    width: 46px;
-    height: 46px;
+    width: 37px;
+    height: 37px;
 }
 .video-link .ht-popup-video .video-button__two .video-play-icon::before {
     border-top: 10px solid transparent;
@@ -1514,22 +1546,29 @@ embed, iframe, object {
     padding: 6px 16px;
     font-size: 14px;
 }
-.mainbanner-box {
-    height:35vh;
+.bannerinfo {
+    top: 65%;
 }
 }
 @media screen and (max-width:400px){
 .bannerinfo h1 {
     font-size: 1rem;
 }
-.mainbanner-box {
-    height:30vh;
-}
 .topbanner .owl-dots {
     bottom: 1rem;
 }
 .calender-table td {
     padding:8px 12px;
+}
+.mainlogo img {
+    height: 35px;
+    padding: 5px 0;
+}
+.bannerinfo {
+    top: 75%;
+}
+.video-box {
+    margin: 5px 0;
 }
 }
 @media screen and (max-width:390px){
